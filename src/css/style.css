@@ -1,0 +1,418 @@
+html {
+    scroll-behavior: smooth;
+    --webkit-antianaliasing: antialiased;
+}
+
+body {
+    background-color: #282828;
+    font-family: 'HelveticaNowText';
+}
+
+.header {
+    height: 80px;
+    background-color: #0b0b0b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.header .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.header hr {
+    color: hsla(0, 0%, 100%, .4) !important;
+    width: 1px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.header .menu .seta.mostrar {
+    transform: rotate(180deg);
+}
+
+.header .menu li {
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.header .menu li a {
+    padding: 30px;
+}
+
+.header .menu li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social .btn-compre-agora {
+    background: hsla(0, 0%, 7%, .65);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'HelveticaNowTextLight';
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 100%;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    white-space: nowrap;
+}
+
+.social .btn-compre-agora:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bolder;
+}
+
+.social .lupa {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.social .btn-avatar {
+    background: none;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+}
+
+.social .btn-avatar .avatar {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 80px);
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+main .fundo-hero {
+    width: 100%;
+}
+
+main .informacoes {
+    position: absolute;
+    padding: 80px;
+    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 10;
+    min-height: calc(100vh - 80px);
+    justify-content: flex-end;
+}
+
+main .informacoes img {
+    max-width: 130px;
+}
+
+main .informacoes .lista-de-jogos {
+    display: flex;
+    gap: 32px;
+}
+
+main .informacoes .titulo {
+    font-size: 50px;
+    line-height: 1.1;
+    font-family: "ChaletComprime";
+    color: #fff;
+}
+
+main .informacoes .subtitulo {
+    font-family: "Chalet";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.bg-container {
+    background-image: url('../imagens/bg-section.jpg');
+    background-size: contain;
+}
+
+.personagens-gta-v,
+.personagens-gta-online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0 160px;
+}
+
+.personagens-gta-v .personagens,
+.personagens-gta-online .personagens {
+    max-width: 700px;
+}
+
+.personagens-gta-v .logo,
+.personagens-gta-online .logo {
+    max-width: 200px;
+}
+
+.personagens-gta-online .informacoes,
+.personagens-gta-v .informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 640px;
+}
+
+.personagens-gta-online .informacoes .titulo,
+.personagens-gta-v .informacoes .titulo {
+    color: #fff;
+    font-family: "ChaletComprime";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+.personagens-gta-online .informacoes p,
+.personagens-gta-v .informacoes p {
+    color: #e8e8e8;
+    font-family: "Chalet";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.6;
+}
+
+.compre-ja {
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    padding: 50px 64px;
+    margin-bottom: 50px;
+}
+
+.compre-ja .titulo {
+    color: #fff;
+    font-family: "ChaletComprime";
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.1;
+    margin: 50px 0 50px;
+}
+
+.compre-ja .container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.compre-ja .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 30px;
+   
+}
+
+.compre-ja .card .informacoes {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1;
+}
+
+.compre-ja .card .informacoes.ativo {
+    display: flex;
+}
+
+.compre-ja .card .capa-do-jogo {
+    max-width: 270px;
+    margin: 80px 138px;
+}
+
+
+.compre-ja .informacoes h3 {
+    color: #fff;
+    font-family: "ChaletComprime";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.compre-ja .informacoes .expansao {
+    background-color: #121212;
+    border: 1px solid #2d2d2d;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.compre-ja .informacoes .lista-de-jogos-plataforma{
+    display: block;
+}
+
+.compre-ja .informacoes p {
+    color: #e8e8e8;
+    font-family: "Chalet";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.compre-ja .informacoes .lista-de-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.compre-ja  .btn-plataforma {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'ChaletComprime';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    white-space: nowrap;
+    margin-top: auto;
+    width: 100%;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos.ativo{
+    display: flex;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li {
+    padding: 20px;
+}
+
+.compre-ja  .btn-plataforma .lista-de-jogos li:nth-child(1){
+    border: 1px solid #00439c;
+}
+
+.compre-ja  .btn-plataforma .lista-de-jogos li:nth-child(1):hover{
+    background-color: #00439c;
+}
+.compre-ja  .btn-plataforma .lista-de-jogos li:nth-child(2){
+    border: 1px solid #387a26;
+}
+
+.compre-ja  .btn-plataforma .lista-de-jogos li:nth-child(2):hover{
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(4) {
+    border: 1px solid #387a26; 
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(4):hover {
+    background-color: #387a26;
+}
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(5) {
+    border: 1px solid #fcaf17; 
+}
+
+.compre-ja .btn-plataforma .lista-de-jogos li:nth-child(5):hover {
+    background-color: #fcaf17;
+}
+
+
+.bg-gta-v,
+.bg-gta-online {
+    width: 500px;
+    height: 300px;
+}
+
+.voltar-ao-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.mostrar{
+    display: block;
+}
+
+.voltar-ao-topo:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.voltar-ao-topo img{
+    transform: rotate(180deg);
+    max-width: 50px;
+}
