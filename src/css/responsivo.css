@@ -1,0 +1,75 @@
+@media(max-width: 1024px){
+    .header{
+        justify-content: center;
+    }
+    .header .menu{
+        display: none;
+    }
+    main .fundo-hero{
+        object-fit: cover;
+    }
+    main .informacoes{
+       padding: 30px;
+       justify-content: center;
+    }
+    main .informacoes img{
+        max-width: 100px;
+    }
+    main .informacoes .titulo{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .personagens-gta-v {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+    .personagens-gta-v .personagens{
+        max-width: 100%;
+    }
+    .personagens-gta-v .logo {
+        max-width: 130px;
+    }
+    .compre-ja{
+        padding: 30px;
+    }
+    .compre-ja .container{
+        flex-direction: column;
+    }
+    .compre-ja .card{
+        width: 100%;
+    
+    }
+    .compre-ja .card .capa-do-jogo{
+        max-width: 100%;
+    }
+
+    .compre-ja .informacoes h3{
+        font-size: 35px;
+    }
+
+    .compre-ja .informacoes .lista-de-jogos{
+        align-self: center;
+    }
+    .compre-ja .informacoes .lista-de-jogos li{
+        width: 100%;
+    }
+    .compre-ja .informacoes .expansao{
+        padding: 10px;
+        margin-top: 15px;   
+    }
+    .btn-plataforma{
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .btn-teste{
+        width: 100%;
+    }
+}
+@media(max-width: 425px){
+    main .informacoes{
+        justify-content: flex-start;
+    }
+}

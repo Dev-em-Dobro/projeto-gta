@@ -58,56 +58,6 @@ header nav {
     border-bottom: 2px solid #fff;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.social .btn-compre-agora {
-    background: hsla(0, 0%, 7%, .65);
-    border: 1px solid #fff;
-    border-radius: 4px;
-    color: #fff;
-    font-family: 'HelveticaNowTextLight';
-    font-size: 15px;
-    font-weight: bolder;
-    line-height: 100%;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    transition: all .3s ease-in;
-    white-space: nowrap;
-}
-
-.social .btn-compre-agora:hover {
-    background: #fff;
-    color: #000;
-    font-weight: bolder;
-}
-
-.social .lupa {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-
-.social .btn-avatar {
-    background: none;
-    border: 0;
-    border-radius: 100%;
-    cursor: pointer;
-    height: 30px;
-    padding: 0;
-    position: relative;
-    width: 30px;
-    cursor: pointer;
-}
-
-.social .btn-avatar .avatar {
-    width: 100%;
-}
-
 main {
     display: flex;
     position: relative;
