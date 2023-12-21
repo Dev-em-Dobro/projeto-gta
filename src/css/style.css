@@ -128,8 +128,8 @@ main .fundo-hero {
 
 main .informacoes {
     position: absolute;
-    padding: 80px;
-    max-width: 625px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -139,7 +139,7 @@ main .informacoes {
 }
 
 main .informacoes img {
-    max-width: 130px;
+    max-width: 150px;
 }
 
 main .informacoes .lista-de-jogos {
@@ -148,7 +148,7 @@ main .informacoes .lista-de-jogos {
 }
 
 main .informacoes .titulo {
-    font-size: 50px;
+    font-size: 55px;
     line-height: 1.1;
     font-family: "ChaletComprime";
     color: #fff;
@@ -252,7 +252,7 @@ main .informacoes .subtitulo {
 .compre-ja .card .informacoes {
     display: none;
     flex-direction: column;
-    gap: 32px;
+    /* gap: 32px; */
     flex: 1;
 }
 
@@ -269,7 +269,7 @@ main .informacoes .subtitulo {
 .compre-ja .informacoes h3 {
     color: #fff;
     font-family: "ChaletComprime";
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1.1;
@@ -279,7 +279,7 @@ main .informacoes .subtitulo {
 .compre-ja .informacoes .expansao {
     background-color: #121212;
     border: 1px solid #2d2d2d;
-    padding: 10px 20px;
+    padding: 40px 20px;
     border-radius: 4px;
 }
 
@@ -302,22 +302,32 @@ main .informacoes .subtitulo {
     gap: 32px;
 }
 
-.compre-ja  .btn-plataforma {
+.btn-plataforma, .btn-teste {
     cursor: pointer;
     background-color: rgba(255, 255, 255, .1);
     border: 0.5px solid #fff;
     border-radius: 4px;
     color: #fff;
     font-family: 'ChaletComprime';
-    font-size: 25px;
+    font-size: 28px;
+    text-align: center;
     font-weight: 400;
     line-height: 25px;
     padding: 20px 40px;
     text-transform: uppercase;
     transition: all .3s ease-in;
     white-space: nowrap;
-    margin-top: auto;
+    /* margin-top: auto; */
     width: 100%;
+}
+
+.btn-teste {
+    width: 50%;
+}
+
+.btn-teste:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .compre-ja .btn-plataforma .lista-de-jogos{
