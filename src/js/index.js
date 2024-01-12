@@ -11,7 +11,7 @@ botoesPlataforma.forEach((botao, index) => {
         listaDeInformacoes[index].classList.toggle('ativo');
     })
 });
-
+RR
 function mostrarBotaoVoltarAoTopo(){
     window.onscroll = () => {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
