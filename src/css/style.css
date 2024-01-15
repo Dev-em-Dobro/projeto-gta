@@ -74,6 +74,7 @@ main::after {
 
 main .fundo-hero {
     width: 100%;
+    object-fit: cover;
 }
 
 main .informacoes {
