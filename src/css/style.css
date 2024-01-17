@@ -9,7 +9,7 @@ body {
     color: #fff;
 }
 
-.header {
+.cabecalho {
     height: 80px;
     background-color: #0b0b0b;
     display: flex;
@@ -19,41 +19,41 @@ body {
     border-bottom: 1px solid #282828;
 }
 
-.header .logo {
+.cabecalho .logo {
     display: flex;
     gap: 15px;
 }
 
-.header hr {
+.cabecalho hr {
     color: hsla(0, 0%, 100%, .4) !important;
     width: 1px;
 }
 
-header nav {
+cabecalho nav {
     display: flex;
     align-items: center;
 }
 
-.header .menu {
+.cabecalho .menu {
     display: flex;
     gap: 30px;
 }
 
-.header .menu .seta.mostrar {
+.cabecalho .menu .seta.mostrar {
     transform: rotate(180deg);
 }
 
-.header .menu li {
+.cabecalho .menu li {
     color: #e8e8e8;
     font-weight: bolder;
     font-size: 15px;
 }
 
-.header .menu li a {
+.cabecalho .menu li a {
     padding: 30px;
 }
 
-.header .menu li a:hover {
+.cabecalho .menu li a:hover {
     border-bottom: 2px solid #fff;
 }
 
