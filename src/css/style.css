@@ -6,12 +6,12 @@ html {
 body {
     background-color: #282828;
     font-family: 'HelveticaNowText';
+    color: #fff;
 }
 
 .header {
     height: 80px;
     background-color: #0b0b0b;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +54,6 @@ header nav {
 }
 
 .header .menu li a:hover {
-    color: #fff;
     border-bottom: 2px solid #fff;
 }
 
@@ -86,7 +85,7 @@ main .informacoes {
     gap: 32px;
     z-index: 10;
     min-height: calc(100vh - 80px);
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 main .informacoes img {
@@ -100,17 +99,13 @@ main .informacoes .lista-de-jogos {
 
 main .informacoes .titulo {
     font-size: 55px;
-    line-height: 1.1;
     font-family: "ChaletComprime";
-    color: #fff;
 }
 
 main .informacoes .subtitulo {
     font-family: "Chalet";
     font-size: 18px;
-    letter-spacing: 0;
     line-height: 1.6;
-    color: #fff;
 }
 
 .bg-container {
@@ -121,8 +116,8 @@ main .informacoes .subtitulo {
 .personagens-gta-v,
 .personagens-gta-online {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 160px 0 160px;
 }
 
@@ -140,19 +135,15 @@ main .informacoes .subtitulo {
 .personagens-gta-v .informacoes {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 32px;
     max-width: 640px;
 }
 
 .personagens-gta-online .informacoes .titulo,
 .personagens-gta-v .informacoes .titulo {
-    color: #fff;
     font-family: "ChaletComprime";
     font-size: 48px;
     font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1.1;
 }
 
 .personagens-gta-online .informacoes p,
@@ -160,26 +151,21 @@ main .informacoes .subtitulo {
     color: #e8e8e8;
     font-family: "Chalet";
     font-size: 16px;
-    letter-spacing: 0;
     line-height: 1.6;
 }
 
 .compre-ja {
     display: flex;
     flex-direction: column;
-    background-color: #282828;
-    padding: 50px 64px;
-    margin-bottom: 50px;
+    text-align: center;
+    padding: 50px;
 }
 
 .compre-ja .titulo {
-    color: #fff;
     font-family: "ChaletComprime";
     font-size: 50px;
     font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1.1;
-    margin: 50px 0 50px;
+    margin-bottom: 50px;
 }
 
 .compre-ja .container {
@@ -191,20 +177,19 @@ main .informacoes .subtitulo {
 .compre-ja .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #000;
     width: 50%;
     border-radius: 10px;
-    padding: 30px;
+    padding: 80px;
+    gap: 40px;
    
 }
 
 .compre-ja .card .informacoes {
     display: none;
     flex-direction: column;
-    /* gap: 32px; */
-    flex: 1;
+    gap: 30px;
 }
 
 .compre-ja .card .informacoes.ativo {
@@ -213,18 +198,13 @@ main .informacoes .subtitulo {
 
 .compre-ja .card .capa-do-jogo {
     max-width: 270px;
-    margin: 80px 138px;
 }
 
 
 .compre-ja .informacoes h3 {
-    color: #fff;
     font-family: "ChaletComprime";
     font-size: 52px;
     font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1.1;
-    margin-bottom: 32px;
 }
 
 .compre-ja .informacoes .expansao {
@@ -242,9 +222,7 @@ main .informacoes .subtitulo {
     color: #e8e8e8;
     font-family: "Chalet";
     font-size: 16px;
-    letter-spacing: 0;
     line-height: 1.6;
-    margin-bottom: 32px;
 }
 
 .compre-ja .informacoes .lista-de-jogos {
@@ -253,30 +231,27 @@ main .informacoes .subtitulo {
     gap: 32px;
 }
 
-.btn-plataforma, .btn-teste {
+.btn-plataforma, .btn-comprar {
+    color: #fff;
     cursor: pointer;
     background-color: rgba(255, 255, 255, .1);
     border: 0.5px solid #fff;
     border-radius: 4px;
-    color: #fff;
     font-family: 'ChaletComprime';
     font-size: 28px;
     text-align: center;
-    font-weight: 400;
     line-height: 25px;
     padding: 20px 40px;
     text-transform: uppercase;
     transition: all .3s ease-in;
-    white-space: nowrap;
-    /* margin-top: auto; */
     width: 100%;
 }
 
-.btn-teste {
+.btn-comprar {
     width: 50%;
 }
 
-.btn-teste:hover {
+.btn-comprar:hover {
     background-color: #ffffff;
     color: #000000;
 }
@@ -347,33 +322,6 @@ main .informacoes .subtitulo {
     height: 300px;
 }
 
-.voltar-ao-topo {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: all .3s ease-in-out;
-}
-
 .mostrar{
     display: block;
-}
-
-.voltar-ao-topo:hover {
-    background-color: #555;
-    transform: scale(1.1);
-}
-
-.voltar-ao-topo img{
-    transform: rotate(180deg);
-    max-width: 50px;
 }

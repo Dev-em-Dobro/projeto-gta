@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/responsivo.css" />
     <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet" />
+    <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-icon">
   </head>
   <body>
     <header class="header">
@@ -20,13 +21,13 @@
       <nav>
         <ul class="menu">
           <li>
-            <a href="#">Visão geral</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Gta Online</a>
+            <a href="#gta">Gta Online</a>
           </li>
           <li>
-            <a href="#">Historia</a>
+            <a href="#comprar">Comprar</a>
           </li>
           <li>
             <a href="#"
@@ -39,7 +40,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="home">
       <img
         class="fundo-hero"
         src="./src/imagens/bg-main.png"
@@ -61,11 +62,11 @@
           Online.
         </p>
 
-        <a class="btn-teste" href="#compre-ja">Compre já</a>
+        <a class="btn-comprar" href="#comprar">Compre já</a>
       </div>
     </main>
     <section class="bg-container">
-      <section class="personagens-gta-v">
+      <section class="personagens-gta-v" id="gta">
         <img
           class="personagens"
           src="./src/imagens/personagens.png"
@@ -94,52 +95,9 @@
         </div>
       </section>
     </section>
-    <section class="compre-ja" id="compre-ja">
+    <section class="compre-ja" id="comprar">
       <h2 class="titulo">Compre já</h2>
       <div class="container">
-        <div class="card">
-          <img
-            class="capa-do-jogo"
-            src="./src/imagens/capa-jogo-gta-online.jpg"
-            alt="Capa do jogo GTA Online"
-          />
-          <div class="informacoes ativo">
-            <h3>Grand Theft Auto Online</h3>
-            <p>Inclui <strong>GTA Online</strong></p>
-            <ul class="lista-de-jogos">
-              <li>
-                <img
-                  src="./src/imagens/logo-ps5.svg"
-                  alt="Logo Playstation 5"
-                />
-              </li>
-              <li>
-                <img
-                  src="./src/imagens/logo-xbox-series-s.svg"
-                  alt="Logo Xbox Series X|S"
-                />
-              </li>
-            </ul>
-            <p class="expansao">Expansão do Modo História disponível no jogo</p>
-          </div>
-          <button class="btn-plataforma">
-            Selecione a plataforma
-            <ul class="lista-de-jogos">
-              <li>
-                <img
-                  src="./src/imagens/logo-ps5.svg"
-                  alt="Logo Playstation 5"
-                />
-              </li>
-              <li>
-                <img
-                  src="./src/imagens/logo-xbox-series-s.svg"
-                  alt="Logo Xbox Series X|S"
-                />
-              </li>
-            </ul>
-          </button>
-        </div>
         <div class="card">
           <img
             class="capa-do-jogo"
@@ -213,12 +171,6 @@
         </div>
       </div>
     </section>
-    <button class="voltar-ao-topo">
-      <img
-        src="./src/imagens/seta-para-cima.png"
-        alt="Seta voltar para o topo"
-      />
-    </button>
     <script src="./src/js/index.js"></script>
   </body>
 </html>
