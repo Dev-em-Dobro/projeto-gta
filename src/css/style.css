@@ -71,7 +71,7 @@ main::after {
     background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
 }
 
-main .fundo-hero {
+main .imagem-fundo {
     width: 100%;
     object-fit: cover;
 }
@@ -102,7 +102,7 @@ main .informacoes .titulo {
     font-family: "ChaletComprime";
 }
 
-main .informacoes .subtitulo {
+main .informacoes .texto {
     font-family: "Chalet";
     font-size: 18px;
     line-height: 1.6;
@@ -174,7 +174,7 @@ main .informacoes .subtitulo {
     gap: 18px;
 }
 
-.compre-ja .card {
+.compre-ja .cartao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,17 +186,17 @@ main .informacoes .subtitulo {
    
 }
 
-.compre-ja .card .informacoes {
+.compre-ja .cartao .informacoes {
     display: none;
     flex-direction: column;
     gap: 30px;
 }
 
-.compre-ja .card .informacoes.ativo {
+.compre-ja .cartao .informacoes.ativo {
     display: flex;
 }
 
-.compre-ja .card .capa-do-jogo {
+.compre-ja .cartao .capa-do-jogo {
     max-width: 270px;
 }
 
