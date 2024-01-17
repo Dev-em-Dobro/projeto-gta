@@ -57,13 +57,13 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-.conteudo-principal {
+.home {
     display: flex;
     position: relative;
     height: calc(100vh - 80px);
 }
 
-.conteudo-principal::after {
+.home::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -71,12 +71,12 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
 }
 
-.conteudo-principal .imagem-fundo {
+.home .imagem-fundo {
     width: 100%;
     object-fit: cover;
 }
 
-.conteudo-principal .informacoes {
+.home .informacoes {
     position: absolute;
     padding: 80px 80px 80px 170px;
     max-width: 780px;
@@ -88,21 +88,21 @@ body {
     justify-content: center;
 }
 
-.conteudo-principal .informacoes img {
+.home .informacoes img {
     max-width: 150px;
 }
 
-.conteudo-principal .informacoes .lista-de-jogos {
+.home .informacoes .lista-de-jogos {
     display: flex;
     gap: 32px;
 }
 
-.conteudo-principal .informacoes .titulo {
+.home .informacoes .titulo {
     font-size: 55px;
     font-family: "ChaletComprime";
 }
 
-.conteudo-principal .informacoes .texto {
+.home .informacoes .texto {
     font-family: "Chalet";
     font-size: 18px;
     line-height: 1.6;
