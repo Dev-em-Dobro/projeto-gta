@@ -1,15 +1,17 @@
 @media (max-width: 1024px) {
 	.cabecalho {
 		justify-content: center;
+		flex-direction: column;
+		padding: 50px 0;
+		gap: 15px;
 	}
 
-	.cabecalho .menu {
-		display: none;
+	.cabecalho .menu li a {
+		padding: 15px;
 	}
 
 	.home .informacoes {
 		padding: 30px;
-		justify-content: center;
 	}
 
 	.home .informacoes img {
@@ -30,29 +32,16 @@
 		padding: 30px;
 	}
 
-	.compre-ja .container {
-		flex-direction: column;
-	}
-
 	.compre-ja .cartao {
 		padding: 80px 20px;
 		width: 100%;
 	}
 
-	.compre-ja .cartao .capa-do-jogo {
-		max-width: 80%;
-	}
-
 	.compre-ja .informacoes h3 {
 		font-size: 35px;
 	}
-
-	.compre-ja .informacoes .lista-de-dispositivos {
-		align-self: center;
-	}
-
-	.compre-ja .informacoes .lista-de-dispositivos li {
-		width: 100%;
+	.compre-ja .informacoes .plataformas {
+		flex-direction: column;
 	}
 
 	.btn-plataforma {
@@ -68,5 +57,9 @@
 @media (max-width: 425px) {
 	main::after {
 		background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+	}
+
+	.compre-ja .cartao .capa-do-jogo {
+		max-width: 80%;
 	}
 }

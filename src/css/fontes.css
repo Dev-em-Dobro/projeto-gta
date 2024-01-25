@@ -1,14 +1,4 @@
 @font-face {
-  font-family: 'HelveticaNowText';
-  src: url('../fonts/HelveticaNowText-Thin.ttf');
-}
-
-@font-face {
-  font-family: 'HelveticaNowTextLight';
-  src: url('../fonts/HelveticaNowText-Light.ttf');
-}
-
-@font-face {
-  font-family: 'ChaletComprime';
-  src: url('../fonts/ChaletComprime.ttf');
+	font-family: "ChaletComprime";
+	src: url("../fontes/ChaletComprime.ttf");
 }

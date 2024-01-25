@@ -1,11 +1,5 @@
-html {
-	scroll-behavior: smooth;
-	--webkit-antianaliasing: antialiased;
-}
-
 body {
 	background-color: #282828;
-	font-family: "HelveticaNowText";
 	color: #fff;
 }
 
@@ -24,11 +18,6 @@ body {
 	gap: 15px;
 }
 
-.cabecalho hr {
-	color: hsla(0, 0%, 100%, 0.4) !important;
-	width: 1px;
-}
-
 .cabecalho .menu {
 	display: flex;
 	gap: 30px;
@@ -39,6 +28,7 @@ body {
 	color: #e8e8e8;
 	font-weight: bolder;
 	font-size: 15px;
+	font-family: "Chalet";
 }
 
 .cabecalho .menu li a:hover {
@@ -48,7 +38,7 @@ body {
 .home {
 	display: flex;
 	position: relative;
-	height: calc(100vh - 80px);
+	min-height: calc(100vh - 80px);
 }
 
 .home::after {
@@ -66,10 +56,10 @@ body {
 
 .home .informacoes {
 	position: absolute;
-	z-index: 10;
+	z-index: 1;
+	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
-	min-height: calc(100vh - 80px);
 	justify-content: center;
 	gap: 32px;
 	padding: 80px 80px 80px 170px;
@@ -80,7 +70,7 @@ body {
 	max-width: 150px;
 }
 
-.home .informacoes .plataformas {
+.home .informacoes .lista-de-jogos {
 	display: flex;
 	gap: 32px;
 }
@@ -96,8 +86,8 @@ body {
 	line-height: 1.6;
 }
 
-.btn-plataforma,
-.btn-comprar {
+.btn-comprar,
+.btn-plataforma {
 	background-color: rgba(255, 255, 255, 0.1);
 	border: 0.5px solid #fff;
 	border-radius: 4px;
@@ -112,12 +102,18 @@ body {
 	transition: all 0.3s ease-in;
 }
 
+.btn-plataforma {
+	color: #fff;
+	width: 100%;
+	cursor: pointer;
+}
+
 .btn-comprar:hover {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-.compre-ja .cartao .capa-do-jogo {
+.compre-ja .capa-do-jogo {
 	max-width: 270px;
 }
 
@@ -147,15 +143,10 @@ body {
 	gap: 40px;
 }
 
-.compre-ja .cartao .informacoes {
-	gap: 30px;
+.compre-ja .informacoes {
 	display: flex;
 	flex-direction: column;
-}
-
-.compre-ja .cartao .plataformas.ativo {
-	display: flex;
-	opacity: 1;
+	gap: 30px;
 }
 
 .compre-ja .informacoes h3 {
@@ -171,16 +162,11 @@ body {
 	line-height: 1.6;
 }
 
-.btn-plataforma {
-	color: #fff;
-	width: 100%;
-	cursor: pointer;
-}
-
 .compre-ja .informacoes .plataformas {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 32px;
+	justify-content: center;
 }
 
 .compre-ja .btn-plataforma .plataformas {
@@ -188,10 +174,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 100%;
 	transition: all 0.3s ease-in;
 	display: none;
 	opacity: 0;
+}
+
+.compre-ja .plataformas.ativo {
+	display: flex;
+	opacity: 1;
 }
 
 .compre-ja .btn-plataforma .plataformas li {
@@ -235,116 +225,3 @@ body {
 .compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
 	background-color: #fcaf17;
 }
-
-/*
-.compre-ja .cartao .informacoes {
-    
-   
-}
-
-.compre-ja .cartao .informacoes.ativo {
-    display: flex;
-}
-
-
-.compre-ja .informacoes h3 {
-    font-family: "ChaletComprime";
-    font-size: 52px;
-    font-weight: 700;
-}
-
-.compre-ja .informacoes .expansao {
-    background-color: #121212;
-    border: 1px solid #2d2d2d;
-    padding: 40px 20px;
-    border-radius: 4px;
-}
-
-.compre-ja .informacoes .lista-de-dispositivos-plataforma{
-    display: block;
-}
-
-.compre-ja .informacoes p {
-    color: #e8e8e8;
-    font-family: "Chalet";
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.compre-ja .informacoes .plataformas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-
-
-.compre-ja .btn-plataforma .lista-de-dispositivos{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    display: none;
-    opacity: 0;
-    transition: all .3s ease-in;
-}
-
-.compre-ja .btn-plataforma .plataformas.ativo{
-    display: flex;
-    margin-top: 20px;
-    opacity: 1;
-}
-
-.compre-ja .btn-plataforma .plataformas li {
-    padding: 20px;
-}
-
-.compre-ja  .btn-plataforma .plataformas li:nth-child(1){
-    border: 1px solid #00439c;
-}
-
-.compre-ja  .btn-plataforma .plataformas li:nth-child(1):hover{
-    background-color: #00439c;
-}
-.compre-ja  .btn-plataforma .plataformas li:nth-child(2){
-    border: 1px solid #387a26;
-}
-
-.compre-ja  .btn-plataforma .plataformas li:nth-child(2):hover{
-    background-color: #387a26;
-}
-
-.compre-ja .btn-plataforma .plataformas li:nth-child(3) {
-    border: 1px solid #00439c;
-}
-
-.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
-    background-color: #00439c;
-}
-
-.compre-ja .btn-plataforma .plataformas li:nth-child(4) {
-    border: 1px solid #387a26; 
-}
-
-.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
-    background-color: #387a26;
-}
-.compre-ja .btn-plataforma .plataformas li:nth-child(5) {
-    border: 1px solid #fcaf17; 
-}
-
-.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
-    background-color: #fcaf17;
-}
-
-
-.bg-gta-v,
-.bg-gta-online {
-    width: 500px;
-    height: 300px;
-}
-
-.mostrar{
-    display: block;
-} */
